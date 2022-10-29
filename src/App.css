@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=El+Messiri&family=Fuzzy+Bubbles&family=Rasa:ital,wght@1,700&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'El Messiri', sans-serif;
+  background-color: #e1eaf5;
 }
 
 .App-logo {
@@ -36,3 +40,51 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navbar{
+  background-color: #14355d;
+  color: white;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0px;
+  /* margin-bottom: 20px; */
+}
+.navbar a:hover{
+  text-decoration: none;
+  display: grid;
+}
+
+
+.store-container{
+  background-color: #e1eaf5;
+  padding-top: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5px;
+}
+
+
+/* .footer{
+  background-color: #14355d;
+  color: white;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+}
+.img-items{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.img-items img {
+  width: 60px;
+  height: 40px;
+} */
