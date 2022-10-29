@@ -59,8 +59,8 @@
 
 
 .store-container{
-  background-color: #e1eaf5;
-  padding-top: 20px;
+  background-color: #ffffff;
+  /* padding-top: 20px; */
 }
 
 .cards-container {
@@ -70,7 +70,7 @@
 }
 
 
-/* .footer{
+.footer{
   background-color: #14355d;
   color: white;
   padding: 2%;
@@ -79,7 +79,7 @@
   position: relative;
   bottom: 0px;
 }
-.img-items{
+/* .img-items{
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -87,4 +87,4 @@
 .img-items img {
   width: 60px;
   height: 40px;
-} */
+}  */
