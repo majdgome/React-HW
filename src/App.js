@@ -7,7 +7,6 @@ import Store from './components/Store';
 function App() {
   return (
     <div className="App">
-      {/* finished */}
       <Nav/>
       <div className='grid-container'>
           <div className='cards-container'>
