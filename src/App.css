@@ -50,7 +50,7 @@
   justify-content: center;
   position: relative;
   top: 0px;
-  /* margin-bottom: 20px; */
+  margin-bottom: 50px;
 }
 .navbar a:hover{
   text-decoration: none;
@@ -60,13 +60,20 @@
 
 .store-container{
   background-color: #ffffff;
-  /* padding-top: 20px; */
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 5px;
+  gap: 20px;
+  width: 80%;
+
+}
+.grid-container{
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -78,13 +85,5 @@
   justify-content: center;
   position: relative;
   bottom: 0px;
+  margin-top: 50px;
 }
-/* .img-items{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.img-items img {
-  width: 60px;
-  height: 40px;
-}  */
