@@ -4,6 +4,9 @@ import {
     BreadcrumbItem,
     BreadcrumbLink,
     BreadcrumbSeparator,
+    Button,
+    ButtonGroup,
+    Stack,
   } from '@chakra-ui/react'
 
 function Nav() {
@@ -11,16 +14,14 @@ function Nav() {
     <div className='navbar'>
         <Breadcrumb separator='\'>
             <BreadcrumbItem>
-                <BreadcrumbLink href='../about.js'>عن أكاديمية طويق</BreadcrumbLink>
+                <BreadcrumbLink href='../index.js'>قائمة المبادرات</BreadcrumbLink>
             </BreadcrumbItem>
-            <BreadcrumbItem>
-                <BreadcrumbLink href='../index.js'>الرئيسية</BreadcrumbLink>
-            </BreadcrumbItem>
-
-            {/* <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href='#'>Contact</BreadcrumbLink>
-            </BreadcrumbItem> */}
         </Breadcrumb>
+
+        
+        {/* <Stack spacing={4} direction='row' align='center'>
+          <Button colorScheme='blue' size='xs' onclick="location.href='https://google.com';"> تسجيل الدخول </Button>
+        </Stack> */}
     </div>
   )
 }

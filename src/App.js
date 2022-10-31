@@ -3,11 +3,13 @@ import './App.css';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Store from './components/Store';
+import Login from './components/login';
 
 function App() {
   return (
     <div className="App">
       <Nav/>
+      <Login/>
       <div className='grid-container'>
           <div className='cards-container'>
             <Store 

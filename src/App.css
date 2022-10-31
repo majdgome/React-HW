@@ -47,14 +47,24 @@
   color: white;
   padding: 2%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   position: relative;
   top: 0px;
-  margin-bottom: 50px;
 }
 .navbar a:hover{
   text-decoration: none;
   display: grid;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.login-container{
+  width: 80%;
+  margin-bottom: 50px;
+  background-color: rgb(220, 231, 190);
+
 }
 
 
