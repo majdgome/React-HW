@@ -1,38 +1,25 @@
 import React from 'react'
-import {
-    Center,
-    Heading,
-    Text,
-    Stack,
-  } from '@chakra-ui/react';
+import { Course } from './courses';
+import Cards from './Cards';
+import { Input } from '@chakra-ui/react';
+
+function Store() {
+    
+  const [title, setTitle] = React.useState("");
+  const result = Course.filter(item => item.title.toLowerCase().includes(title.toLowerCase()));
   
-export default function Store(props) {
   return (
-    <div className='store-container'>
-        <Center py={0} >  
-          <Stack pt={1} align={'center'}>
-              <Stack>
-                  <img src={props.img} width='80px' height='80px' alt='Course'></img>
-              </Stack>
-              <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-                  {props.title}
-              </Heading>
-              <hr/> 
-              <Stack>
-                <Text color={'blue.500'} fontSize={'sm'} textTransform={'uppercase'}>
-                    {props.description} <br/>
-                </Text>
-                <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-                    {props.type} - {props.location}
-                </Text>
-              </Stack>
-              <Stack direction={'row'} align={'center'}>
-                  <Text fontWeight={800} fontSize={'sm'} color={props.isAvailable? 'green' : 'red.500'}>
-                      {props.isAvailable? "متاح" : "مغلق"} 
-                  </Text>
-              </Stack>
-          </Stack>
-        </Center>
+    <div>
+        <Input placeholder='Search ...' backgroundColor={'white'} mb={10} w={400} mt={10} borderRadius={15} onChange={(e)=> setTitle(e.target.value)}/>
+        <div className='grid-container'>
+            <div className='cards-container'>
+                {result.map((item) => (
+                <Cards img={item.img} title={item.title} description={item.description} type={item.type} location={item.location} isAvailable={item.isAvailable}/>
+                ))}
+            </div>
+        </div>
     </div>
   )
 }
+
+export default Store

@@ -1,18 +1,12 @@
 import React from 'react'
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink
-  } from '@chakra-ui/react'
+import {Link} from 'react-router-dom'
 
 function Nav() {
   return (
     <div className='navbar'>
-        <Breadcrumb separator='\'>
-            <BreadcrumbItem>
-                <BreadcrumbLink href='../index.js'>قائمة المبادرات</BreadcrumbLink>
-            </BreadcrumbItem>
-        </Breadcrumb>
+        <Link to={"/About"}>عنا</Link>
+        <Link to={"/Store"}>قائمة المبادرات </Link>
+        <Link to={"/"}>الرئيسية</Link> 
     </div>
   )
 }
