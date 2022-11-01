@@ -4,12 +4,9 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Checkbox,
   Stack,
-  Link,
   Button,
   Heading,
-  Text,
   useColorModeValue,
 } from '@chakra-ui/react';
 import { useState } from 'react';
@@ -20,9 +17,9 @@ export default function Login() {
   const [passVal, setPassVal] = useState("Please Enter your password");
 
   
-    function handleSubmit(e) {
-      e.preventDefault();
-      alert('is logged in');
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert('is logged in');
     }
 
 

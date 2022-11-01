@@ -17,11 +17,6 @@ function Nav() {
                 <BreadcrumbLink href='../index.js'>قائمة المبادرات</BreadcrumbLink>
             </BreadcrumbItem>
         </Breadcrumb>
-
-        
-        {/* <Stack spacing={4} direction='row' align='center'>
-          <Button colorScheme='blue' size='xs' onclick="location.href='https://google.com';"> تسجيل الدخول </Button>
-        </Stack> */}
     </div>
   )
 }
