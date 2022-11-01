@@ -9,14 +9,14 @@ import { useState } from 'react';
 
 function App() {
   const [title, setTitle] = useState("");
-  const result = Course.filter(item => item.title.toLowerCase().includes(title));
+  const result = Course.filter(item => item.title.toLowerCase().includes(title.toLowerCase()));
   
   return (
     <div className="App">
       <Nav/>
       <Login/>
 
-      <Input placeholder='Search ...' backgroundColor={'white'} mb={10} w={400} onChange={(e)=> setTitle(e.target.value)}/>
+      <Input placeholder='Search ...' backgroundColor={'white'} mb={10} w={400} borderRadius={15} onChange={(e)=> setTitle(e.target.value)}/>
       
       <div className='grid-container'>
         <div className='cards-container'>
