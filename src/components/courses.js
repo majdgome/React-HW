@@ -16,6 +16,7 @@ export const Course = [
         type: "حضوري",
         location: "الرياض",
         isAvailable: true,
+        
     },
     {
         id: 3,

@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className='footer'>
-        <p>جميع الحقوق محفوظة للاتحاد السعودي للأمن السيبراني والبرمجة والدرونز 2021</p>
+        
     </div>
   )
 }
